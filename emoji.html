@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Emoji</title>
+</head>
+<body >
+ <div  id="name" ></div>
+ <div id="name_1" ></div>
+ <div id="name__1" ></div>
+ <div id="name2" ></div>
+ <div id="name_2" ></div>
+ <div id="name__2" ></div>
+ <div id="name3" ></div>
+ <div id="name_3" ></div>
+ <div id="name__3" ></div>
+ <div id="name4" ></div>
+ <div id="name_4" ></div>
+ <div id="name__4" ></div>
+ <div id="name5" ></div>
+ <div id="name_5" ></div>
+ <div id="name__5" ></div>
+ <div id="name6" ></div>
+ <div id="name_6" ></div>
+ <div id="name__6" ></div>
+ <div id="name7" ></div>
+ <div id="name_7" ></div>
+ <div id="name__7" ></div>
+ <div id="name8" ></div>
+ <div id="name_8" ></div>
+ <div id="name__8" ></div>
+ <div id="name9" ></div>
+ <div id="name_9" ></div>
+ <div id="name__9" ></div>
+ <div id="name10" ></div>
+ <div id="name_10" ></div>
+ <div id="name__10" ></div> 
+ <div id="name11" ></div>
+ <div id="name_11" ></div>
+ <div id="name__11" ></div> 
+ <div id="name12" ></div>
+ <div id="name_12" ></div>
+ <div id="name__12" ></div> 
+   
+    
+    <div class=" cont dropend" style="position: absolute; bottom: 14%; cursor: pointer; left: 8%;">
+        <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="images/emoji.png" height="45px" width="45px" >
+        </button>
+        <ul class="dropdown-menu" style=" border: none; background-color: rgba(255, 255, 255, 0);" >
+            
+            <div style="display: flex;">
+                <li class="emoji" id="like"><img src="images/like.png" height="25px" width="25px"></li>
+                <li class="emoji" id="dislike"><img src="images/dislike.png" height="25px" width="25px"></li>
+                <li class="emoji" id="party"><img src="images/party.png" height="25px" width="25px"></li>
+                <li class="emoji" id="clapping"><img src="images/clapping (1).png" height="25px" width="25px"></li>
+            </div>
+            <div style="display: flex;">
+                <li class="emoji" id="love"><img src="images/in-love.png" height="25px" width="25px" ></li>
+                <li class="emoji" id="laugh"><img src="images/laughing.png" height="25px" width="25px" ></li>
+                <li class="emoji" id="sad"><img src="images/sad.png" height="25px" width="25px"></li>
+                <li class="emoji" id="wow"><img src="images/wow.png" height="25px" width="25px"></li>
+            </div>
+         
+            <div style="display: flex;">   
+            <li class="emoji" id="congo"><img src="images/confetti (2).png" height="25px" width="25px"></li>
+                <li class="emoji" id="baloon"><img src="images/balloon.png" height="25px" width="25px"></li>
+                <li class="emoji" id="ribbon"><img src="images/new-year.png" height="25px" width="25px"></li>
+                <li class="emoji" id="star"><img src="images/star.png" height="25px" width="25px"></li>
+                </div>
+         
+         
+        </ul>
+      </div>
+     
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+let love=document.getElementById("love");
+let laugh=document.getElementById("laugh");
+let sad=document.getElementById("sad");
+let wow=document.getElementById("wow");
+let like=document.getElementById("like");
+let dislike=document.getElementById("dislike");
+let party=document.getElementById("party");
+let clapping=document.getElementById("clapping");
+let congo=document.getElementById("congo");
+let baloon=document.getElementById("baloon");
+let ribbon=document.getElementById("ribbon");
+let star=document.getElementById("star");
+
+
+function stop_love(){
+        document.getElementById("name").innerHTML="";
+    document.getElementById("name").classList.remove("class")
+    document.getElementById("name_1").innerHTML="";
+    document.getElementById("name_1").classList.remove("class2")
+    document.getElementById("name__1").innerHTML="";
+    document.getElementById("name__1").classList.remove("class3")
+    
+}
+function stop_laugh(){
+        document.getElementById("name2").innerHTML="";
+    document.getElementById("name2").classList.remove("class")
+    document.getElementById("name_2").innerHTML="";
+    document.getElementById("name_2").classList.remove("class2")
+    document.getElementById("name__2").innerHTML="";
+    document.getElementById("name__2").classList.remove("class3")
+    
+}
+function stop_sad(){
+        document.getElementById("name3").innerHTML="";
+    document.getElementById("name3").classList.remove("class")
+    document.getElementById("name_3").innerHTML="";
+    document.getElementById("name_3").classList.remove("class2")
+    document.getElementById("name__3").innerHTML="";
+    document.getElementById("name__3").classList.remove("class3")
+   
+    
+}
+function stop_wow(){
+        document.getElementById("name4").innerHTML="";
+    document.getElementById("name4").classList.remove("class")
+    document.getElementById("name_4").innerHTML="";
+    document.getElementById("name_4").classList.remove("class2")
+    document.getElementById("name__4").innerHTML="";
+    document.getElementById("name__4").classList.remove("class3")
+    
+}
+function stop_like(){
+        document.getElementById("name5").innerHTML="";
+    document.getElementById("name5").classList.remove("class")
+    document.getElementById("name_5").innerHTML="";
+    document.getElementById("name_5").classList.remove("class2")
+    document.getElementById("name__5").innerHTML="";
+    document.getElementById("name__5").classList.remove("class3")
+    
+}
+function stop_dislike(){
+        document.getElementById("name6").innerHTML="";
+    document.getElementById("name6").classList.remove("class")
+    document.getElementById("name_6").innerHTML="";
+    document.getElementById("name_6").classList.remove("class2")
+    document.getElementById("name__6").innerHTML="";
+    document.getElementById("name__6").classList.remove("class3")
+    
+}
+function stop_party(){
+        document.getElementById("name7").innerHTML="";
+    document.getElementById("name7").classList.remove("class")
+    document.getElementById("name_7").innerHTML="";
+    document.getElementById("name_7").classList.remove("class2")
+    document.getElementById("name__7").innerHTML="";
+    document.getElementById("name__7").classList.remove("class3")
+    
+}
+function stop_clap(){
+        document.getElementById("name8").innerHTML="";
+    document.getElementById("name8").classList.remove("class")
+    document.getElementById("name_8").innerHTML="";
+    document.getElementById("name_8").classList.remove("class2")
+    document.getElementById("name__8").innerHTML="";
+    document.getElementById("name__8").classList.remove("class3")
+    
+}
+function stop_congo(){
+        document.getElementById("name9").innerHTML="";
+    document.getElementById("name9").classList.remove("class")
+    document.getElementById("name_9").innerHTML="";
+    document.getElementById("name_9").classList.remove("class2")
+    document.getElementById("name__9").innerHTML="";
+    document.getElementById("name__9").classList.remove("class3")
+    
+}
+
+function stop_baloon(){
+        document.getElementById("name10").innerHTML="";
+    document.getElementById("name10").classList.remove("class")
+    document.getElementById("name_10").innerHTML="";
+    document.getElementById("name_10").classList.remove("class2")
+    document.getElementById("name__10").innerHTML="";
+    document.getElementById("name__10").classList.remove("class3")
+    
+}
+function stop_ribbon(){
+        document.getElementById("name11").innerHTML="";
+    document.getElementById("name11").classList.remove("class")
+    document.getElementById("name_11").innerHTML="";
+    document.getElementById("name_11").classList.remove("class2")
+    document.getElementById("name__11").innerHTML="";
+    document.getElementById("name__11").classList.remove("class3")
+    
+}
+
+function stop_star(){
+        document.getElementById("name12").innerHTML="";
+    document.getElementById("name12").classList.remove("class")
+    document.getElementById("name_12").innerHTML="";
+    document.getElementById("name_12").classList.remove("class2")
+    document.getElementById("name__12").innerHTML="";
+    document.getElementById("name__12").classList.remove("class3")
+    
+}
+
+
+love.addEventListener('click', function () {
+      setTimeout(() => {
+        var img = document.createElement('img');
+        img.src = 'https://i.postimg.cc/sDX01pjr/in-love.png';
+
+        document.getElementById('name').appendChild(img);
+
+        document.getElementById('name').classList.add('class');
+      }, 200);
+
+      setTimeout(stop_love, 1200);
+    });
+love.addEventListener("click",function(){
+    setTimeout(() => {
+        var img = document.createElement('img');
+        img.src = 'https://i.postimg.cc/sDX01pjr/in-love.png';
+
+        document.getElementById('name_1').appendChild(img);
+
+        document.getElementById('name_1').classList.add('class2');
+      },100);
+
+      setTimeout(stop_love, 1200);
+    });
+    love.addEventListener("click",function(){
+    setTimeout(() => {
+        var img = document.createElement('img');
+        img.src = 'https://i.postimg.cc/sDX01pjr/in-love.png';
+
+        document.getElementById('name__1').appendChild(img);
+
+        document.getElementById('name__1').classList.add('class3');
+      },50);
+
+      setTimeout(stop_love, 1200);
+    });
+
+   
+
+laugh.addEventListener("click",function(){
+
+    setTimeout(() => {
+        var img = document.createElement('img');
+        img.src = 'https://i.postimg.cc/GtZYLw39/laughing.png';
+
+        document.getElementById('name2').appendChild(img);
+
+        document.getElementById('name2').classList.add('class');
+      }, 200);
+
+      setTimeout(stop_laugh, 1200);
+ 
+})
+
+laugh.addEventListener("click",function(){
+
+setTimeout(() => {
+    var img = document.createElement('img');
+    img.src = 'https://i.postimg.cc/GtZYLw39/laughing.png';
+
+    document.getElementById('name_2').appendChild(img);
+
+    document.getElementById('name_2').classList.add('class2');
+  }, 100);
+
+  setTimeout(stop_laugh, 1200);
+
+})
+laugh.addEventListener("click",function(){
+
+setTimeout(() => {
+    var img = document.createElement('img');
+    img.src = 'https://i.postimg.cc/GtZYLw39/laughing.png';
+
+    document.getElementById('name__2').appendChild(img);
+
+    document.getElementById('name__2').classList.add('class3');
+  }, 50);
+
+  setTimeout(stop_laugh, 1200);
+
+})
+
+sad.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src="https://i.postimg.cc/YCx330q3/sad.png";
+document.getElementById("name3").appendChild(img);
+document.getElementById("name3").classList.add("class")
+},200);
+
+setTimeout(stop_sad,1200);
+
+})
+
+sad.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src="https://i.postimg.cc/YCx330q3/sad.png";
+document.getElementById("name_3").appendChild(img);
+document.getElementById("name_3").classList.add("class2")
+},100);
+
+setTimeout(stop_sad,1200);
+
+})
+
+sad.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src="https://i.postimg.cc/YCx330q3/sad.png";
+document.getElementById("name__3").appendChild(img);
+document.getElementById("name__3").classList.add("class3")
+},50);
+
+setTimeout(stop_sad,1200);
+
+})
+
+wow.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src="https://i.postimg.cc/9XGqTSfP/wow.png";
+document.getElementById("name4").appendChild(img);
+document.getElementById("name4").classList.add("class")
+
+},200);
+setTimeout(stop_wow,1200);
+
+})
+
+
+wow.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src="https://i.postimg.cc/9XGqTSfP/wow.png";
+document.getElementById("name_4").appendChild(img);
+document.getElementById("name_4").classList.add("class2")
+
+},100);
+setTimeout(stop_wow,1200);
+
+})
+
+wow.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src="https://i.postimg.cc/9XGqTSfP/wow.png";
+document.getElementById("name__4").appendChild(img);
+document.getElementById("name__4").classList.add("class3")
+
+},50);
+setTimeout(stop_wow,1200);
+
+})
+
+like.addEventListener("click",function(){
+   setTimeout(() => {
+    var img=document.createElement("img");
+img.src="   https://i.postimg.cc/SNkXtrBH/like.png";
+document.getElementById("name5").appendChild(img);
+document.getElementById("name5").classList.add("class")  
+   },200);
+   
+   
+setTimeout(stop_like,1200);
+
+
+}
+)
+
+like.addEventListener("click",function(){
+   setTimeout(() => {
+    var img=document.createElement("img");
+img.src="   https://i.postimg.cc/SNkXtrBH/like.png";
+document.getElementById("name_5").appendChild(img);
+document.getElementById("name_5").classList.add("class2")  
+   },100);
+   
+   
+setTimeout(stop_like,1200);
+
+
+})
+
+
+like.addEventListener("click",function(){
+   setTimeout(() => {
+    var img=document.createElement("img");
+img.src="   https://i.postimg.cc/SNkXtrBH/like.png";
+document.getElementById("name__5").appendChild(img);
+document.getElementById("name__5").classList.add("class3")  
+   },50);
+   
+   
+setTimeout(stop_like,1200);
+
+
+})
+
+
+
+dislike.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src=" https://i.postimg.cc/vmcXxMX7/dislike.png";
+document.getElementById("name6").appendChild(img);
+document.getElementById("name6").classList.add("class")
+}, 200);
+
+    
+setTimeout(stop_dislike,1200);
+})
+
+dislike.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src=" https://i.postimg.cc/vmcXxMX7/dislike.png";
+document.getElementById("name_6").appendChild(img);
+document.getElementById("name_6").classList.add("class2")
+}, 100);
+
+    
+setTimeout(stop_dislike,1200);
+})
+
+dislike.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src=" https://i.postimg.cc/vmcXxMX7/dislike.png";
+document.getElementById("name__6").appendChild(img);
+document.getElementById("name__6").classList.add("class3")
+}, 50);
+
+    
+setTimeout(stop_dislike,1200);
+})
+
+
+party.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src=" https://i.postimg.cc/mrGsZXTS/party.png";
+document.getElementById("name7").appendChild(img);
+document.getElementById("name7").classList.add("class") 
+}, 200);
+
+    
+setTimeout(stop_party,1200);
+})
+
+party.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src=" https://i.postimg.cc/mrGsZXTS/party.png";
+document.getElementById("name_7").appendChild(img);
+document.getElementById("name_7").classList.add("class2") 
+}, 100);
+
+    
+setTimeout(stop_party,1200);
+})
+
+party.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src=" https://i.postimg.cc/mrGsZXTS/party.png";
+document.getElementById("name__7").appendChild(img);
+document.getElementById("name__7").classList.add("class3") 
+}, 50);
+
+    
+setTimeout(stop_party,1200);
+})
+
+
+
+clapping.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src="    https://i.postimg.cc/8cjTq7bJ/clapping-1.png";
+document.getElementById("name8").appendChild(img);
+document.getElementById("name8").classList.add("class")
+},200);
+
+   
+setTimeout(stop_clap,1200);
+})
+
+clapping.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src="    https://i.postimg.cc/8cjTq7bJ/clapping-1.png";
+document.getElementById("name_8").appendChild(img);
+document.getElementById("name_8").classList.add("class2")
+},100);
+
+   
+setTimeout(stop_clap,1200);
+})
+
+
+clapping.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src="    https://i.postimg.cc/8cjTq7bJ/clapping-1.png";
+document.getElementById("name__8").appendChild(img);
+document.getElementById("name__8").classList.add("class3")
+},50);
+
+   
+setTimeout(stop_clap,1200);
+})
+
+
+congo.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src="https://i.postimg.cc/fyBB0L4K/confetti-2.png";
+document.getElementById("name9").appendChild(img);
+document.getElementById("name9").classList.add("class") 
+}, 200);
+
+    
+setTimeout(stop_congo,1200);
+})
+
+congo.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src="https://i.postimg.cc/fyBB0L4K/confetti-2.png";
+document.getElementById("name_9").appendChild(img);
+document.getElementById("name_9").classList.add("class2") 
+}, 100);
+
+    
+setTimeout(stop_congo,1200);
+})
+congo.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src="https://i.postimg.cc/fyBB0L4K/confetti-2.png";
+document.getElementById("name__9").appendChild(img);
+document.getElementById("name__9").classList.add("class3") 
+}, 50);
+
+    
+setTimeout(stop_congo,1200);
+})
+
+
+
+baloon.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src=" https://i.postimg.cc/CLgPNrnT/balloon.png";
+document.getElementById("name10").appendChild(img);
+document.getElementById("name10").classList.add("class") 
+}, 200);
+
+    
+setTimeout(stop_baloon,1200);
+})
+
+baloon.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src=" https://i.postimg.cc/CLgPNrnT/balloon.png";
+document.getElementById("name_10").appendChild(img);
+document.getElementById("name_10").classList.add("class2") 
+}, 100);
+
+    
+setTimeout(stop_baloon,1200);
+})
+
+baloon.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src=" https://i.postimg.cc/CLgPNrnT/balloon.png";
+document.getElementById("name__10").appendChild(img);
+document.getElementById("name__10").classList.add("class3") 
+}, 50);
+
+    
+setTimeout(stop_baloon,1200);
+})
+
+ribbon.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src="https://i.postimg.cc/xTv7VVV1/new-year.png";
+document.getElementById("name11").appendChild(img);
+document.getElementById("name11").classList.add("class") 
+}, 200);
+
+    
+setTimeout(stop_ribbon,1200);
+})
+
+ribbon.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src="https://i.postimg.cc/xTv7VVV1/new-year.png";
+document.getElementById("name_11").appendChild(img);
+document.getElementById("name_11").classList.add("class2") 
+}, 100);
+
+    
+setTimeout(stop_ribbon,1200);
+})
+
+ribbon.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src="https://i.postimg.cc/xTv7VVV1/new-year.png";
+document.getElementById("name__11").appendChild(img);
+document.getElementById("name__11").classList.add("class3") 
+}, 50);
+
+    
+setTimeout(stop_ribbon,1200);
+})
+
+star.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src=" https://i.postimg.cc/T2Nm2CnM/star.png";
+document.getElementById("name12").appendChild(img);
+document.getElementById("name12").classList.add("class") 
+}, 200);
+
+    
+setTimeout(stop_star,1200);
+})
+
+star.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src=" https://i.postimg.cc/T2Nm2CnM/star.png";
+document.getElementById("name_12").appendChild(img);
+document.getElementById("name_12").classList.add("class2") 
+}, 100);
+
+    
+setTimeout(stop_star,1200);
+})
+star.addEventListener("click",function(){
+setTimeout(() => {
+    var img=document.createElement("img");
+img.src=" https://i.postimg.cc/T2Nm2CnM/star.png";
+document.getElementById("name__12").appendChild(img);
+document.getElementById("name__12").classList.add("class3") 
+}, 50);
+
+    
+setTimeout(stop_star,1200);
+})
+
+
+
+</script>
+</html>
+<!--
+    setTimeout(stop,2000);
+    https://i.postimg.cc/T2Nm2CnM/star.png
+    https://i.postimg.cc/CLgPNrnT/balloon.png
+    https://i.postimg.cc/xTv7VVV1/new-year.png
+    https://i.postimg.cc/fyBB0L4K/confetti-2.png
+    https://i.postimg.cc/8cjTq7bJ/clapping-1.png
+    https://i.postimg.cc/vmcXxMX7/dislike.png
+    https://i.postimg.cc/SNkXtrBH/like.png
+https://i.postimg.cc/mrGsZXTS/party.png
+    function stop(){
+        document.getElementById("name").innerHTML="";
+    document.getElementById("name").classList.remove("class")
+}
+    
+    
+    
+
+-->
