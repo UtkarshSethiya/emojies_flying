@@ -92,7 +92,7 @@
     padding: 5px;
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:1200px) {
   .class{
     position: absolute;
     left: 20%;
@@ -107,6 +107,12 @@
   }
   .cont{
     position: absolute;
-    left: 20%;
+  left: 20%;
+  }
+
+  body{
+    background-image: url('images/audi.png');
+  width: 100vw;
+   height: 100vh;
   }
 }
