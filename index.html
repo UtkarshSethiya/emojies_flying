@@ -47,13 +47,13 @@
  <div id="name__12" ></div> 
    
     
-    <div class="cont dropend" style="position: absolute; bottom: 14%; cursor: pointer; left: 8%;">
+    <div class="cont  dropend" style="position: absolute; bottom: 10%; cursor: pointer; left: 4%; background-color: rgba(0, 255, 255, 0);">
         <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="images/emoji.png" height="45px" width="45px" >
         </button>
-        <ul class="dropdown-menu" style=" border: none; background-color: rgba(255, 255, 255, 0);" >
+        <div class="dropdown-menu" style=" border: none; background-color: rgba(255, 235, 205, 0);" >
             
-            <div style="display: flex;">
+            <div style=" display: flex; position: absolute !important; bottom: 90% !important;">
                 <li class="emoji" id="like"><img src="images/like.png" height="25px" width="25px"></li>
                 <li class="emoji" id="dislike"><img src="images/dislike.png" height="25px" width="25px"></li>
                 <li class="emoji" id="party"><img src="images/party.png" height="25px" width="25px"></li>
@@ -74,7 +74,7 @@
                 </div>
          
          
-        </ul>
+            </div>
       </div>
      
 
@@ -217,9 +217,9 @@ love.addEventListener('click', function () {
         document.getElementById('name').appendChild(img);
 
         document.getElementById('name').classList.add('class');
-      }, 200);
+      }, 100);
 
-      setTimeout(stop_love, 1200);
+      setTimeout(stop_love, 1500);
     });
 love.addEventListener("click",function(){
     setTimeout(() => {
@@ -229,9 +229,9 @@ love.addEventListener("click",function(){
         document.getElementById('name_1').appendChild(img);
 
         document.getElementById('name_1').classList.add('class2');
-      },100);
+      },50);
 
-      setTimeout(stop_love, 1200);
+      setTimeout(stop_love, 1500);
     });
     love.addEventListener("click",function(){
     setTimeout(() => {
@@ -241,9 +241,9 @@ love.addEventListener("click",function(){
         document.getElementById('name__1').appendChild(img);
 
         document.getElementById('name__1').classList.add('class3');
-      },50);
+      },0);
 
-      setTimeout(stop_love, 1200);
+      setTimeout(stop_love, 1500);
     });
 
    
@@ -257,9 +257,9 @@ laugh.addEventListener("click",function(){
         document.getElementById('name2').appendChild(img);
 
         document.getElementById('name2').classList.add('class');
-      }, 200);
+      }, 100);
 
-      setTimeout(stop_laugh, 1200);
+      setTimeout(stop_laugh, 1500);
  
 })
 
@@ -274,7 +274,7 @@ setTimeout(() => {
     document.getElementById('name_2').classList.add('class2');
   }, 100);
 
-  setTimeout(stop_laugh, 1200);
+  setTimeout(stop_laugh, 1500);
 
 })
 laugh.addEventListener("click",function(){
@@ -288,7 +288,7 @@ setTimeout(() => {
     document.getElementById('name__2').classList.add('class3');
   }, 50);
 
-  setTimeout(stop_laugh, 1200);
+  setTimeout(stop_laugh, 1500);
 
 })
 
@@ -298,9 +298,9 @@ setTimeout(() => {
 img.src="images/sad (1).png";
 document.getElementById("name3").appendChild(img);
 document.getElementById("name3").classList.add("class")
-},200);
+},100);
 
-setTimeout(stop_sad,1200);
+setTimeout(stop_sad,1500);
 
 })
 
@@ -312,7 +312,7 @@ document.getElementById("name_3").appendChild(img);
 document.getElementById("name_3").classList.add("class2")
 },100);
 
-setTimeout(stop_sad,1200);
+setTimeout(stop_sad,1500);
 
 })
 
@@ -324,7 +324,7 @@ document.getElementById("name__3").appendChild(img);
 document.getElementById("name__3").classList.add("class3")
 },50);
 
-setTimeout(stop_sad,1200);
+setTimeout(stop_sad,1500);
 
 })
 
@@ -335,8 +335,8 @@ img.src="images/wow (1).png";
 document.getElementById("name4").appendChild(img);
 document.getElementById("name4").classList.add("class")
 
-},200);
-setTimeout(stop_wow,1200);
+},100);
+setTimeout(stop_wow,1500);
 
 })
 
@@ -349,7 +349,7 @@ document.getElementById("name_4").appendChild(img);
 document.getElementById("name_4").classList.add("class2")
 
 },100);
-setTimeout(stop_wow,1200);
+setTimeout(stop_wow,1500);
 
 })
 
@@ -361,7 +361,7 @@ document.getElementById("name__4").appendChild(img);
 document.getElementById("name__4").classList.add("class3")
 
 },50);
-setTimeout(stop_wow,1200);
+setTimeout(stop_wow,1500);
 
 })
 
@@ -371,10 +371,10 @@ like.addEventListener("click",function(){
 img.src=" images/like.png";
 document.getElementById("name5").appendChild(img);
 document.getElementById("name5").classList.add("class")  
-   },200);
+   },100);
    
    
-setTimeout(stop_like,1200);
+setTimeout(stop_like,1500);
 
 
 }
@@ -389,7 +389,7 @@ document.getElementById("name_5").classList.add("class2")
    },100);
    
    
-setTimeout(stop_like,1200);
+setTimeout(stop_like,1500);
 
 
 })
@@ -404,7 +404,7 @@ document.getElementById("name__5").classList.add("class3")
    },50);
    
    
-setTimeout(stop_like,1200);
+setTimeout(stop_like,1500);
 
 
 })
@@ -417,10 +417,10 @@ setTimeout(() => {
 img.src=" images/dislike.png";
 document.getElementById("name6").appendChild(img);
 document.getElementById("name6").classList.add("class")
-}, 200);
+}, 100);
 
     
-setTimeout(stop_dislike,1200);
+setTimeout(stop_dislike,1500);
 })
 
 dislike.addEventListener("click",function(){
@@ -432,7 +432,7 @@ document.getElementById("name_6").classList.add("class2")
 }, 100);
 
     
-setTimeout(stop_dislike,1200);
+setTimeout(stop_dislike,1500);
 })
 
 dislike.addEventListener("click",function(){
@@ -444,7 +444,7 @@ document.getElementById("name__6").classList.add("class3")
 }, 50);
 
     
-setTimeout(stop_dislike,1200);
+setTimeout(stop_dislike,1500);
 })
 
 
@@ -454,10 +454,10 @@ setTimeout(() => {
 img.src=" images/party.png";
 document.getElementById("name7").appendChild(img);
 document.getElementById("name7").classList.add("class") 
-}, 200);
+}, 100);
 
     
-setTimeout(stop_party,1200);
+setTimeout(stop_party,1500);
 })
 
 party.addEventListener("click",function(){
@@ -469,7 +469,7 @@ document.getElementById("name_7").classList.add("class2")
 }, 100);
 
     
-setTimeout(stop_party,1200);
+setTimeout(stop_party,1500);
 })
 
 party.addEventListener("click",function(){
@@ -481,7 +481,7 @@ document.getElementById("name__7").classList.add("class3")
 }, 50);
 
     
-setTimeout(stop_party,1200);
+setTimeout(stop_party,1500);
 })
 
 
@@ -492,10 +492,10 @@ setTimeout(() => {
 img.src="   images/clapping (1).png";
 document.getElementById("name8").appendChild(img);
 document.getElementById("name8").classList.add("class")
-},200);
+},100);
 
    
-setTimeout(stop_clap,1200);
+setTimeout(stop_clap,1500);
 })
 
 clapping.addEventListener("click",function(){
@@ -507,7 +507,7 @@ document.getElementById("name_8").classList.add("class2")
 },100);
 
    
-setTimeout(stop_clap,1200);
+setTimeout(stop_clap,1500);
 })
 
 
@@ -520,7 +520,7 @@ document.getElementById("name__8").classList.add("class3")
 },50);
 
    
-setTimeout(stop_clap,1200);
+setTimeout(stop_clap,1500);
 })
 
 
@@ -530,10 +530,10 @@ setTimeout(() => {
 img.src="images/confetti (2).png";
 document.getElementById("name9").appendChild(img);
 document.getElementById("name9").classList.add("class") 
-}, 200);
+}, 100);
 
     
-setTimeout(stop_congo,1200);
+setTimeout(stop_congo,1500);
 })
 
 congo.addEventListener("click",function(){
@@ -545,7 +545,7 @@ document.getElementById("name_9").classList.add("class2")
 }, 100);
 
     
-setTimeout(stop_congo,1200);
+setTimeout(stop_congo,1500);
 })
 congo.addEventListener("click",function(){
 setTimeout(() => {
@@ -556,7 +556,7 @@ document.getElementById("name__9").classList.add("class3")
 }, 50);
 
     
-setTimeout(stop_congo,1200);
+setTimeout(stop_congo,1500);
 })
 
 
@@ -567,10 +567,10 @@ setTimeout(() => {
 img.src=" images/balloon.png";
 document.getElementById("name10").appendChild(img);
 document.getElementById("name10").classList.add("class") 
-}, 200);
+}, 100);
 
     
-setTimeout(stop_baloon,1200);
+setTimeout(stop_baloon,1500);
 })
 
 baloon.addEventListener("click",function(){
@@ -582,7 +582,7 @@ document.getElementById("name_10").classList.add("class2")
 }, 100);
 
     
-setTimeout(stop_baloon,1200);
+setTimeout(stop_baloon,1500);
 })
 
 baloon.addEventListener("click",function(){
@@ -594,7 +594,7 @@ document.getElementById("name__10").classList.add("class3")
 }, 50);
 
     
-setTimeout(stop_baloon,1200);
+setTimeout(stop_baloon,1500);
 })
 
 ribbon.addEventListener("click",function(){
@@ -603,10 +603,10 @@ setTimeout(() => {
 img.src="images/new-year.png";
 document.getElementById("name11").appendChild(img);
 document.getElementById("name11").classList.add("class") 
-}, 200);
+}, 100);
 
     
-setTimeout(stop_ribbon,1200);
+setTimeout(stop_ribbon,1500);
 })
 
 ribbon.addEventListener("click",function(){
@@ -618,7 +618,7 @@ document.getElementById("name_11").classList.add("class2")
 }, 100);
 
     
-setTimeout(stop_ribbon,1200);
+setTimeout(stop_ribbon,1500);
 })
 
 ribbon.addEventListener("click",function(){
@@ -630,7 +630,7 @@ document.getElementById("name__11").classList.add("class3")
 }, 50);
 
     
-setTimeout(stop_ribbon,1200);
+setTimeout(stop_ribbon,1500);
 })
 
 star.addEventListener("click",function(){
@@ -639,10 +639,10 @@ setTimeout(() => {
 img.src=" images/star.png";
 document.getElementById("name12").appendChild(img);
 document.getElementById("name12").classList.add("class") 
-}, 200);
+}, 100);
 
     
-setTimeout(stop_star,1200);
+setTimeout(stop_star,1500);
 })
 
 star.addEventListener("click",function(){
@@ -654,7 +654,7 @@ document.getElementById("name_12").classList.add("class2")
 }, 100);
 
     
-setTimeout(stop_star,1200);
+setTimeout(stop_star,1500);
 })
 star.addEventListener("click",function(){
 setTimeout(() => {
@@ -665,7 +665,7 @@ document.getElementById("name__12").classList.add("class3")
 }, 50);
 
     
-setTimeout(stop_star,1200);
+setTimeout(stop_star,1500);
 })
 
 
@@ -673,7 +673,7 @@ setTimeout(stop_star,1200);
 </script>
 </html>
 <!--
-    setTimeout(stop,2000);
+    setTimeout(stop,1000);
     https://i.postimg.cc/T2Nm2CnM/star.png
     https://i.postimg.cc/CLgPNrnT/balloon.png
     https://i.postimg.cc/xTv7VVV1/new-year.png
