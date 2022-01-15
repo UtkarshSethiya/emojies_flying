@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
     <title>Emoji</title>
+
 </head>
 <body >
  <div  id="name" ></div>
@@ -48,10 +50,10 @@
    
     
     <div class="cont  dropend" style="position: absolute; bottom: 10%; cursor: pointer; left: 4%; background-color: rgba(0, 255, 255, 0);">
-        <button type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        <button  type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="images/emoji.png" height="45px" width="45px" >
         </button>
-        <div class="dropdown-menu" style=" border: none; background-color: rgba(255, 235, 205, 0);" >
+        <div  class="dropdown-menu" style=" border: none; background-color: rgba(255, 235, 205, 0);" >
             
             <div style=" display: flex; position: absolute !important; bottom: 90% !important;">
                 <li class="emoji" id="like"><img src="images/like.png" height="25px" width="25px"></li>
@@ -78,10 +80,57 @@
       </div>
      
 
+      <div class="cont  dropend" style="position: absolute; bottom: 80%; cursor: pointer; left: 4%; background-color: rgba(0, 255, 255, 0);">
+        <button  id="icon" type="button" class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="images/raise-your-hand-to-ask.png" height="35px" width="35px" >
+        </button>
+        <div id="dropdown" class="dropdown-menu" style=" border: none; background-color: rgba(255, 235, 205, 0) ; width: 300px !important;" >
+            
+        <div id="container" style="margin-bottom: 5px;">
+            <span id="response">Do you have any questions ?</span><span id="yes" class="yesno" style="margin-right: 5px; margin-left: 5px;">Yes</span>   <span class="yesno" id="no">No</span>
+           
+        </div>
+      
+          </div>
+     </div>    
+
+
+
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script>
+
+yes=document.getElementById("yes");
+no=document.getElementById("no");
+
+
+document.getElementById("yes").addEventListener("click",function(){
+    document.getElementById("yes").remove();
+    document.getElementById("no").remove();
+    document.getElementById("response").innerHTML="Please wait ,shortly you will recieve live joining link";
+})
+document.getElementById("no").addEventListener("click",function(){
+    document.getElementById("yes").remove();
+    document.getElementById("no").remove();
+    document.getElementById("response").innerHTML="Thank You!";
+})
+
+document.getElementById("dropdown").addEventListener("click",function(){
+    event.stopPropagation();
+})
+
+document.getElementById("icon").addEventListener("click",function(){
+    document.getElementById("response").innerHTML="Do you have any questions ?"
+    document.getElementById("container").appendChild(yes);
+    document.getElementById("container").appendChild(no);
+   
+
+})
+  
+
+
+
 let love=document.getElementById("love");
 let laugh=document.getElementById("laugh");
 let sad=document.getElementById("sad");
@@ -217,7 +266,7 @@ love.addEventListener('click', function () {
         document.getElementById('name').appendChild(img);
 
         document.getElementById('name').classList.add('class');
-      }, 100);
+      }, 500);
 
       setTimeout(stop_love, 1500);
     });
@@ -229,7 +278,7 @@ love.addEventListener("click",function(){
         document.getElementById('name_1').appendChild(img);
 
         document.getElementById('name_1').classList.add('class2');
-      },50);
+      },250);
 
       setTimeout(stop_love, 1500);
     });
@@ -257,7 +306,7 @@ laugh.addEventListener("click",function(){
         document.getElementById('name2').appendChild(img);
 
         document.getElementById('name2').classList.add('class');
-      }, 100);
+      }, 500);
 
       setTimeout(stop_laugh, 1500);
  
@@ -272,7 +321,7 @@ setTimeout(() => {
     document.getElementById('name_2').appendChild(img);
 
     document.getElementById('name_2').classList.add('class2');
-  }, 100);
+  }, 250);
 
   setTimeout(stop_laugh, 1500);
 
@@ -286,7 +335,7 @@ setTimeout(() => {
     document.getElementById('name__2').appendChild(img);
 
     document.getElementById('name__2').classList.add('class3');
-  }, 50);
+  }, 0);
 
   setTimeout(stop_laugh, 1500);
 
@@ -298,7 +347,7 @@ setTimeout(() => {
 img.src="images/sad (1).png";
 document.getElementById("name3").appendChild(img);
 document.getElementById("name3").classList.add("class")
-},100);
+},500);
 
 setTimeout(stop_sad,1500);
 
@@ -310,7 +359,7 @@ setTimeout(() => {
 img.src="images/sad (1).png";
 document.getElementById("name_3").appendChild(img);
 document.getElementById("name_3").classList.add("class2")
-},100);
+},250);
 
 setTimeout(stop_sad,1500);
 
@@ -322,7 +371,7 @@ setTimeout(() => {
 img.src="images/sad (1).png";
 document.getElementById("name__3").appendChild(img);
 document.getElementById("name__3").classList.add("class3")
-},50);
+},0);
 
 setTimeout(stop_sad,1500);
 
@@ -335,7 +384,7 @@ img.src="images/wow (1).png";
 document.getElementById("name4").appendChild(img);
 document.getElementById("name4").classList.add("class")
 
-},100);
+},500);
 setTimeout(stop_wow,1500);
 
 })
@@ -348,7 +397,7 @@ img.src="images/wow (1).png";
 document.getElementById("name_4").appendChild(img);
 document.getElementById("name_4").classList.add("class2")
 
-},100);
+},250);
 setTimeout(stop_wow,1500);
 
 })
@@ -360,7 +409,7 @@ img.src="images/wow (1).png";
 document.getElementById("name__4").appendChild(img);
 document.getElementById("name__4").classList.add("class3")
 
-},50);
+},0);
 setTimeout(stop_wow,1500);
 
 })
@@ -371,7 +420,7 @@ like.addEventListener("click",function(){
 img.src=" images/like.png";
 document.getElementById("name5").appendChild(img);
 document.getElementById("name5").classList.add("class")  
-   },100);
+   },500);
    
    
 setTimeout(stop_like,1500);
@@ -386,7 +435,7 @@ like.addEventListener("click",function(){
 img.src="    images/like.png";
 document.getElementById("name_5").appendChild(img);
 document.getElementById("name_5").classList.add("class2")  
-   },100);
+   },250);
    
    
 setTimeout(stop_like,1500);
@@ -401,7 +450,7 @@ like.addEventListener("click",function(){
 img.src=" images/like.png";
 document.getElementById("name__5").appendChild(img);
 document.getElementById("name__5").classList.add("class3")  
-   },50);
+   },0);
    
    
 setTimeout(stop_like,1500);
@@ -417,7 +466,7 @@ setTimeout(() => {
 img.src=" images/dislike.png";
 document.getElementById("name6").appendChild(img);
 document.getElementById("name6").classList.add("class")
-}, 100);
+}, 500);
 
     
 setTimeout(stop_dislike,1500);
@@ -429,7 +478,7 @@ setTimeout(() => {
 img.src="images/dislike.png";
 document.getElementById("name_6").appendChild(img);
 document.getElementById("name_6").classList.add("class2")
-}, 100);
+}, 250);
 
     
 setTimeout(stop_dislike,1500);
@@ -441,7 +490,7 @@ setTimeout(() => {
 img.src="images/dislike.png";
 document.getElementById("name__6").appendChild(img);
 document.getElementById("name__6").classList.add("class3")
-}, 50);
+}, 0);
 
     
 setTimeout(stop_dislike,1500);
@@ -454,7 +503,7 @@ setTimeout(() => {
 img.src=" images/party.png";
 document.getElementById("name7").appendChild(img);
 document.getElementById("name7").classList.add("class") 
-}, 100);
+}, 500);
 
     
 setTimeout(stop_party,1500);
@@ -466,7 +515,7 @@ setTimeout(() => {
 img.src="images/party.png";
 document.getElementById("name_7").appendChild(img);
 document.getElementById("name_7").classList.add("class2") 
-}, 100);
+}, 250);
 
     
 setTimeout(stop_party,1500);
@@ -478,7 +527,7 @@ setTimeout(() => {
 img.src="images/party.png";
 document.getElementById("name__7").appendChild(img);
 document.getElementById("name__7").classList.add("class3") 
-}, 50);
+}, 0);
 
     
 setTimeout(stop_party,1500);
@@ -492,7 +541,7 @@ setTimeout(() => {
 img.src="   images/clapping (1).png";
 document.getElementById("name8").appendChild(img);
 document.getElementById("name8").classList.add("class")
-},100);
+},500);
 
    
 setTimeout(stop_clap,1500);
@@ -504,7 +553,7 @@ setTimeout(() => {
 img.src="  images/clapping (1).png";
 document.getElementById("name_8").appendChild(img);
 document.getElementById("name_8").classList.add("class2")
-},100);
+},250);
 
    
 setTimeout(stop_clap,1500);
@@ -517,7 +566,7 @@ setTimeout(() => {
 img.src="images/clapping (1).png";
 document.getElementById("name__8").appendChild(img);
 document.getElementById("name__8").classList.add("class3")
-},50);
+},0);
 
    
 setTimeout(stop_clap,1500);
@@ -530,7 +579,7 @@ setTimeout(() => {
 img.src="images/confetti (2).png";
 document.getElementById("name9").appendChild(img);
 document.getElementById("name9").classList.add("class") 
-}, 100);
+}, 500);
 
     
 setTimeout(stop_congo,1500);
@@ -542,7 +591,7 @@ setTimeout(() => {
 img.src="images/confetti (2).png";
 document.getElementById("name_9").appendChild(img);
 document.getElementById("name_9").classList.add("class2") 
-}, 100);
+}, 250);
 
     
 setTimeout(stop_congo,1500);
@@ -553,7 +602,7 @@ setTimeout(() => {
 img.src="images/confetti (2).png";
 document.getElementById("name__9").appendChild(img);
 document.getElementById("name__9").classList.add("class3") 
-}, 50);
+}, 0);
 
     
 setTimeout(stop_congo,1500);
@@ -567,7 +616,7 @@ setTimeout(() => {
 img.src=" images/balloon.png";
 document.getElementById("name10").appendChild(img);
 document.getElementById("name10").classList.add("class") 
-}, 100);
+}, 500);
 
     
 setTimeout(stop_baloon,1500);
@@ -579,7 +628,7 @@ setTimeout(() => {
 img.src="images/balloon.png";
 document.getElementById("name_10").appendChild(img);
 document.getElementById("name_10").classList.add("class2") 
-}, 100);
+}, 250);
 
     
 setTimeout(stop_baloon,1500);
@@ -591,7 +640,7 @@ setTimeout(() => {
 img.src="images/balloon.png";
 document.getElementById("name__10").appendChild(img);
 document.getElementById("name__10").classList.add("class3") 
-}, 50);
+}, 0);
 
     
 setTimeout(stop_baloon,1500);
@@ -603,7 +652,7 @@ setTimeout(() => {
 img.src="images/new-year.png";
 document.getElementById("name11").appendChild(img);
 document.getElementById("name11").classList.add("class") 
-}, 100);
+}, 500);
 
     
 setTimeout(stop_ribbon,1500);
@@ -615,7 +664,7 @@ setTimeout(() => {
 img.src="images/new-year.png";
 document.getElementById("name_11").appendChild(img);
 document.getElementById("name_11").classList.add("class2") 
-}, 100);
+}, 250);
 
     
 setTimeout(stop_ribbon,1500);
@@ -627,7 +676,7 @@ setTimeout(() => {
 img.src="images/new-year.png";
 document.getElementById("name__11").appendChild(img);
 document.getElementById("name__11").classList.add("class3") 
-}, 50);
+}, 0);
 
     
 setTimeout(stop_ribbon,1500);
@@ -639,7 +688,7 @@ setTimeout(() => {
 img.src=" images/star.png";
 document.getElementById("name12").appendChild(img);
 document.getElementById("name12").classList.add("class") 
-}, 100);
+}, 500);
 
     
 setTimeout(stop_star,1500);
@@ -651,7 +700,7 @@ setTimeout(() => {
 img.src=" images/star.png";
 document.getElementById("name_12").appendChild(img);
 document.getElementById("name_12").classList.add("class2") 
-}, 100);
+}, 250);
 
     
 setTimeout(stop_star,1500);
@@ -662,7 +711,7 @@ setTimeout(() => {
 img.src="images/star.png";
 document.getElementById("name__12").appendChild(img);
 document.getElementById("name__12").classList.add("class3") 
-}, 50);
+}, 0);
 
     
 setTimeout(stop_star,1500);
@@ -673,7 +722,12 @@ setTimeout(stop_star,1500);
 </script>
 </html>
 <!--
-    setTimeout(stop,1000);
+
+        <div style="text-align: center;"><span id="yes" class="yesno" style="margin-right: 25px;">Yes</span>   <span class="yesno" id="no">No</span>  </div>
+            </div>
+
+
+    setTimeout(stop,5000);
     https://i.postimg.cc/T2Nm2CnM/star.png
     https://i.postimg.cc/CLgPNrnT/balloon.png
     https://i.postimg.cc/xTv7VVV1/new-year.png
